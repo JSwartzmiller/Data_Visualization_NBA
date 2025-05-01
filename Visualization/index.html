@@ -12,13 +12,19 @@
 <body>
     <h1>NBA Player Stat Analyzer</h1>
 
-    <div class="controls">
+    <p id="instruction">
+        Select a team and player to investigate their stats.
+    </p>
+
+    <div class="selection_controls">
         <label for="teamSelect">Select Team:</label>
         <select id="teamSelect"></select>
-
+    
         <label for="playerSelect">Select Player:</label>
         <select id="playerSelect"></select>
-
+    </div>
+    
+    <div class="filter_controls">
         <label for="statSelect">Select Stat:</label>
         <select id="statSelect">
             <option value="PTS">Points</option>
@@ -28,7 +34,7 @@
             <option value="STL">Steals</option>
             <option value="BLK">Blocks</option>
         </select>
-
+    
         <label for="gameCountSelect">Games to Display:</label>
         <select id="gameCountSelect">
             <option value="50">Last 50</option>
@@ -37,7 +43,7 @@
             <option value="10">Last 10</option>
             <option value="5">Last 5</option>
         </select>
-
+    
         <label for="baselineInput">Baseline Value:</label>
         <input type="number" id="baselineInput" placeholder="Enter baseline" />
     </div>
